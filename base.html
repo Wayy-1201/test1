@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} — Flask Урок</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Моё Flask-приложение</h1>
+        <nav>
+            <a href="{{ url_for('index') }}">Главная</a> |
+            <a href="{{ url_for('about') }}">О нас</a> |
+            <a href="{{ url_for('greet') }}">Поприветствовать</a>
+        </nav>
+    </header>
+
+    <main>
+        {% if show_form %}
+            <form method="POST">
+                <label for="name">Введите ваше имя:</label>
+                <input type="text" id="name" name="name" required>
+                <button type="submit">Отправить</button>
+            </form>
+        {% endif %}
+
+        {% if content %}
+            <div class="content">{{ content }}</div>
+        {% endif %}
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Учебный проект по Flask</p>
+    </footer>
+</body>
+</html>
