@@ -4,7 +4,7 @@ lottie.loadAnimation({
         renderer: 'svg',
         loop: true,
         autoplay: true,
-        path: "../imgs/for_img_crystal/AnimatedSticker.json"
+        path: "imgs/for_img_crystal/AnimatedSticker.json"
 });
 
 
