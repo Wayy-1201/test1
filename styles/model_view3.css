@@ -1,0 +1,80 @@
+/* Donate styles */
+.donate-title {
+    text-align: center;
+    margin: 10px 0 20px;
+}
+
+.donate-title h2 {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 5px;
+    text-shadow: 0 0 10px rgba(0, 60, 255, 0.5);
+}
+
+.donate-title p {
+    color: #888;
+    font-size: 14px;
+}
+
+.donate-column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.donate-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2a2a2a;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid #3a3a3a;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}
+
+.donate-item-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.donate-emoji {
+    font-size: 32px;
+}
+
+.donate-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.donate-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+.donate-desc {
+    font-size: 12px;
+    color: #888;
+}
+
+.donate-price {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.price-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffd700;
+}
+
+.price-currency {
+    font-size: 14px;
+    color: #888;
+}

@@ -1,0 +1,67 @@
+ .stats-section {
+        margin-top: 32px;
+        width: 100%;
+    }
+.all_all_all{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin: 0 auto;
+}
+.stats-title {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.stats{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.stats-list {
+    width: 90%;
+    background: #f0f0f0;
+    border-radius: 1px;
+    padding: 3px;
+}
+
+    .stats-item {
+        display: flex;
+        align-items: center;
+        padding: 12px 16px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .stats-item:last-child {
+        border-bottom: none;
+    }
+
+    .stats-rank {
+        width: 30px;
+        font-weight: bold;
+        color: #40a7e3;
+    }
+
+    .stats-user {
+        flex: 1;
+        font-weight: 500;
+    }
+
+    .stats-clicks {
+        font-weight: 600;
+        color: #000000;
+    }
+
+    .current-user-highlight {
+        background: rgba(64, 167, 227, 0.1);
+        border-radius: 12px;
+        margin-top: 8px;
+    }
+
+.stats-title h2{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
