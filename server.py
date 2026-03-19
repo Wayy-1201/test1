@@ -178,10 +178,10 @@ def index():
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <link rel="icon" href="static/imgs/users_api/monetka.svg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Кристалл-Кликер</title>
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
@@ -688,7 +688,7 @@ footer a.active::before{
     <div class="for_nav">
         <nav id="nav_user">
             <div class="user-info">
-                <div class="user-avatar" id="userAvatar"></div>
+                <div style="width: 45px; height: 45px;" class="user-avatar" id="userAvatar"></div>
                 <div class="user-name" id="userName">Загрузка...</div>
             </div>
             <div class="users_stars_div">
@@ -706,29 +706,29 @@ footer a.active::before{
             <div class="model-content">
                 <div class="stats-row">
                     <div class="stat-block">
-                        <div class="stat-label">За 1 клик</div>
+                        <div style="font-size: 15px;" class="stat-label">За 1 клик</div>
                         <div class="stat-value">
-                            <svg class="coin-svg" viewBox="0 0 36 36"><circle cx="18" cy="18" r="16" fill="#ffd700" stroke="#e6ac00" stroke-width="2"/><text x="18" y="23" text-anchor="middle" font-size="16" font-weight="900" fill="#b8860b">$</text></svg>
-                            <span id="user_upgrade">1</span>
+                            <div style="width: 30px;" class="imgs"><img src="/static/imgs/users_api/monetka.svg" alt=""></div>
+                            <span style="font-size: 17px;" id="user_upgrade">1</span>
                         </div>
                     </div>
                     <div class="stat-block">
-                        <div class="stat-label">Необходимо</div>
+                        <div style="font-size: 15px ;" class="stat-label">Необходимо</div>
                         <div class="stat-value">
-                            <span id="required-for-level">150</span>
+                            <span style="font-size: 25px;" id="required-for-level">150</span>
                         </div>
                     </div>
                     <div class="stat-block">
-                        <div class="stat-label">Монет в сек.</div>
+                        <div style="font-size: 15px;" class="stat-label">Монет в сек.</div>
                         <div class="stat-value">
-                            <svg class="coin-svg" viewBox="0 0 36 36"><circle cx="18" cy="18" r="16" fill="#ffd700" stroke="#e6ac00" stroke-width="2"/><text x="18" y="23" text-anchor="middle" font-size="16" font-weight="900" fill="#b8860b">$</text></svg>
-                            <span id="user_upgrade_sek">0</span>
+                            <div style="width: 30px;" class="imgs"><img src="static/imgs/users_api/monetka.svg" alt=""></div>
+                            <span style="font-size: 17px;" id="user_upgrade_sek">0</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="main-image-container">
-                    <svg class="main-coin" viewBox="0 0 36 36"><circle cx="18" cy="18" r="16" fill="#ffd700" stroke="#e6ac00" stroke-width="2"/><text x="18" y="23" text-anchor="middle" font-size="16" font-weight="900" fill="#b8860b">$</text></svg>
+                    <div style="width: 60px;" class="imgs"><img src="static/imgs/users_api/monetka.svg" alt=""></div>
                     <div id="user_content_coin_lol" class="main-counter">0</div>
                 </div>
 
@@ -747,9 +747,7 @@ footer a.active::before{
 
                 <div class="bottom-section">
                     <div class="tapalka">
-                        <div id="sticker">
-                            <span class="crystal-emoji">💎</span>
-                        </div>
+                        <div id="sticker_container" style="width:180px;height:180px;cursor:pointer;"></div>
                     </div>
                 </div>
             </div>
@@ -759,7 +757,7 @@ footer a.active::before{
         <div id="model_view_2" class="model-view" data-view="2">
             <div class="model-content">
                 <div class="main-image-container">
-                    <svg class="main-coin" viewBox="0 0 36 36"><circle cx="18" cy="18" r="16" fill="#ffd700" stroke="#e6ac00" stroke-width="2"/><text x="18" y="23" text-anchor="middle" font-size="16" font-weight="900" fill="#b8860b">$</text></svg>
+                    <div style="width: 45px;" class="imgs"><img src="static/imgs/users_api/monetka.svg" alt=""></div>
                     <div id="user_content_coin_lol_for_2" class="main-counter2">0</div>
                 </div>
                 <div class="donate-title"><p>Улучшай, Апгрейди, Покупай</p></div>
@@ -866,7 +864,7 @@ footer a.active::before{
         <div id="model_view_3" class="model-view" data-view="3">
             <div class="model-content">
                 <div class="main-image-container">
-                    <svg class="main-coin" viewBox="0 0 36 36"><circle cx="18" cy="18" r="16" fill="#ffd700" stroke="#e6ac00" stroke-width="2"/><text x="18" y="23" text-anchor="middle" font-size="16" font-weight="900" fill="#b8860b">$</text></svg>
+                    <div style="width: 45px;" class="imgs"><img src="static/imgs/users_api/monetka.svg" alt=""></div>
                     <div id="user_content_coin_lol_for_3" class="main-counter2">0</div>
                 </div>
                 <div class="donate-title"><p>Поддержи проект и получи бонусы</p></div>
@@ -955,21 +953,21 @@ footer a.active::before{
                         <h2>Промокод на еду:</h2>
                         <div class="promo-content">
                             <div class="promo-info"><button class="promo-buy-btn" data-price="5000000">Купить за 5M</button></div>
-                            <div class="promo-image">🍕</div>
+                            <div class="promo-image"><img src="static/imgs/for_model5/xgV6wg8mPlnCva3A 1.svg" alt=""></div>
                         </div>
                     </div>
                     <div class="promo-card">
                         <h2>Промокод на одежду:</h2>
                         <div class="promo-content">
                             <div class="promo-info"><button class="promo-buy-btn" data-price="10000000">Купить за 10M</button></div>
-                            <div class="promo-image">👕</div>
+                            <div class="promo-image"><img src="static/imgs/for_model5/F3G7qPk-zTwD-qMI 1.svg" alt=""></div>
                         </div>
                     </div>
                     <div class="promo-card">
                         <h2>Промокод на книги:</h2>
                         <div class="promo-content">
                             <div class="promo-info"><button class="promo-buy-btn" data-price="15000000">Купить за 15M</button></div>
-                            <div class="promo-image">📚</div>
+                            <div class="promo-image"><img src="static/imgs/for_model5/qmkOKVxBws0JRoBV 1.svg" alt=""></div>
                         </div>
                     </div>
                 </div>
@@ -981,23 +979,23 @@ footer a.active::before{
     <div class="for_footer">
         <footer id="footer">
             <a href="#" class="active" data-view="1">
-                <span class="nav-icon">💰</span>
+                <span class="nav-icon"><img src="static/imgs/for_fyter/dollar.png" alt=""></span>
                 <h4>Главная</h4>
             </a>
             <a href="#" data-view="2">
-                <span class="nav-icon">⛏️</span>
+                <span class="nav-icon"><img src="static/imgs/for_fyter/pickaxe.png" alt=""></span>
                 <h4>Улучшения</h4>
             </a>
             <a href="#" data-view="3">
-                <span class="nav-icon">💎</span>
+                <span class="nav-icon"><img src="static/imgs/for_fyter/money.png" alt=""></span>
                 <h4>Донат</h4>
             </a>
             <a href="#" data-view="4">
-                <span class="nav-icon">🏆</span>
+                <span class="nav-icon"><img src="static/imgs/for_fyter/top_lider.png" alt=""></span>
                 <h4>Рейтинг</h4>
             </a>
             <a href="#" data-view="5">
-                <span class="nav-icon">🎁</span>
+                <span class="nav-icon"><img src="static/imgs/for_fyter/Gift.png" alt=""></span>
                 <h4>Промокоды</h4>
             </a>
         </footer>
@@ -1022,16 +1020,18 @@ footer a.active::before{
         </div>
     </div>
 </div>
+<!-- Добавьте после других скриптов в <head> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+<script src="https://telegram.org/js/telegram-web-app.js"></script>
 
 <script>
-// =================================================================
-//  Кристалл-Кликер — Full Game + Rating System + Flask Sync
-// =================================================================
+const API_BASE = 'http://localhost:5000/api';
 
-// ================= КОНФИГУРАЦИЯ API =================
-const API_BASE = '';  // Пустой, потому что сервер на том же домене
 
 // ================= ДАННЫЕ ПОЛЬЗОВАТЕЛЯ =================
+
+
+
 const userData = {
     telegram_id: 0,
     username: 'Игрок',
@@ -1064,6 +1064,68 @@ const userData = {
     },
     myRating: { avg: 0, count: 0 }
 };
+
+let mySticker = null;
+
+let currentStickerLevel = userData.level; 
+
+document.addEventListener('DOMContentLoaded', () => {
+    const container = document.getElementById("sticker_container");
+    
+    // Функция загрузки стикера
+    function loadSticker(level) {
+        // НЕ загружаем, если уровень не изменился
+        if (level === currentStickerLevel && mySticker) {
+            return; // Выходим, стикер уже загружен
+        }
+        
+        let path = 'static/imgs/for_img_crystal/AnimatedSticker.json';
+        
+        if (level == 1) path = 'static/imgs/for_img_crystal/AnimatedSticker2.json';
+        else if (level == 2) path = 'static/imgs/for_img_crystal/AnimatedSticker.json';
+        else if (level == 3) path = 'static/imgs/for_img_crystal/AnimatedSticker3.json';
+        
+        console.log('Загружаем новый стикер для уровня', level);
+        
+        // Удаляем старый
+        if (mySticker) {
+            mySticker.destroy();
+            mySticker = null;
+        }
+        
+        // Загружаем новый
+        mySticker = lottie.loadAnimation({
+            container: container,
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: path
+        });
+        
+        // Запоминаем текущий уровень стикера
+        currentStickerLevel = level;
+    }
+    
+    // Загружаем начальный стикер
+    loadSticker(userData.level);
+    
+    // Добавляем обработчик клика
+    container.addEventListener('click', handleClick);
+    
+    // Сохраняем оригинальную функцию checkLevel
+    const originalCheckLevel = checkLevel;
+    
+    // Переопределяем checkLevel
+    checkLevel = function() {
+        let oldLevel = userData.level; // Запоминаем уровень ДО
+        originalCheckLevel(); // Вызываем оригинальную функцию
+        // Загружаем новый стикер ТОЛЬКО если уровень действительно изменился
+        if (oldLevel !== userData.level) {
+            loadSticker(userData.level);
+        }
+    };
+});
+sticker_container.addEventListener('click' , handleClick)
 
 // ================= УРОВНИ =================
 const levelConfig = {
@@ -1219,7 +1281,7 @@ function checkLevel() {
         userData.balance += bonus;
         need = levelConfig.get(userData.level);
         showNotification('УРОВЕНЬ ' + userData.level + '! +' + bonus + ' монет', true);
-    }
+    };
 }
 
 function createFloatText(x, y, value) {
@@ -1477,6 +1539,20 @@ var leaderboardData = [];
 var currentRateTarget = null;
 var selectedStarScore = 0;
 
+// Моковые данные лидерборда (работают без сервера)
+var mockLeaderboard = [
+    { rank: 1, telegram_id: 101, username: 'КристалМастер', level: 10, balance: 8500000, total_earned: 12000000, avg_rating: 4.8, rating_count: 24 },
+    { rank: 2, telegram_id: 102, username: 'ДиамондКинг', level: 9, balance: 5200000, total_earned: 7800000, avg_rating: 4.5, rating_count: 18 },
+    { rank: 3, telegram_id: 103, username: 'КликМашина', level: 8, balance: 3100000, total_earned: 5600000, avg_rating: 4.2, rating_count: 12 },
+    { rank: 4, telegram_id: 104, username: 'ФермерПро', level: 7, balance: 1800000, total_earned: 3200000, avg_rating: 3.9, rating_count: 8 },
+    { rank: 5, telegram_id: 105, username: 'НовичокЛаки', level: 6, balance: 950000, total_earned: 1400000, avg_rating: 4.0, rating_count: 5 },
+    { rank: 6, telegram_id: 106, username: 'ТурбоТаппер', level: 5, balance: 620000, total_earned: 890000, avg_rating: 3.7, rating_count: 9 },
+    { rank: 7, telegram_id: 107, username: 'КриптоФарм', level: 5, balance: 410000, total_earned: 670000, avg_rating: 4.1, rating_count: 6 },
+    { rank: 8, telegram_id: 108, username: 'МегаКликер', level: 4, balance: 280000, total_earned: 450000, avg_rating: 3.5, rating_count: 3 },
+    { rank: 9, telegram_id: 109, username: 'ЗолотойЖук', level: 3, balance: 150000, total_earned: 220000, avg_rating: 4.3, rating_count: 7 },
+    { rank: 10, telegram_id: 110, username: 'СтартАп', level: 2, balance: 50000, total_earned: 75000, avg_rating: 3.0, rating_count: 2 }
+];
+
 // ---------- Загрузка лидерборда ----------
 function loadLeaderboard() {
     var listEl = document.getElementById('statsList');
@@ -1488,22 +1564,117 @@ function loadLeaderboard() {
         '<div class="skeleton skeleton-item"></div>' +
         '<div class="skeleton skeleton-item"></div>';
 
-    // Загружаем с сервера
-    fetch(API_BASE + '/api/leaderboard?sort=' + currentSort + '&limit=50')
-        .then(function(r) { return r.json(); })
+    // Пробуем загрузить с сервера
+    fetchLeaderboard(currentSort)
         .then(function(data) {
-            if (data.ok) {
-                leaderboardData = data.leaderboard;
-                document.getElementById('totalUsers').textContent = 'Всего игроков: ' + data.total_users;
-                renderLeaderboard();
-            } else {
-                throw new Error('API error');
-            }
+            leaderboardData = data.leaderboard;
+            document.getElementById('totalUsers').textContent = 'Всего игроков: ' + data.total_users;
+            renderLeaderboard();
         })
         .catch(function() {
-            showNotification('Ошибка загрузки рейтинга', false);
-            listEl.innerHTML = '<div style="text-align:center;padding:20px;color:var(--text-secondary);font-weight:600;">Ошибка загрузки</div>';
+            // Фоллбек на моковые данные
+            leaderboardData = sortMockData(currentSort);
+            // Добавляем текущего пользователя в список
+            addCurrentUserToMock();
+            document.getElementById('totalUsers').textContent = 'Всего игроков: ' + leaderboardData.length + ' (демо)';
+            renderLeaderboard();
         });
+}
+
+function addCurrentUserToMock() {
+    // Добавляем текущего игрока если его нет
+    var found = leaderboardData.find(function(u) { return u.telegram_id === userData.telegram_id; });
+    if (!found) {
+        leaderboardData.push({
+            rank: 0,
+            telegram_id: userData.telegram_id,
+            username: userData.username,
+            level: userData.level,
+            balance: userData.balance,
+            total_earned: userData.totalEarned,
+            avg_rating: userData.myRating.avg,
+            rating_count: userData.myRating.count
+        });
+    } else {
+        found.balance = userData.balance;
+        found.level = userData.level;
+        found.total_earned = userData.totalEarned;
+    }
+    // Пересортировка
+    leaderboardData = sortMockData(currentSort, leaderboardData);
+}
+
+function sortMockData(sort, arr) {
+    var list = (arr || mockLeaderboard).slice();
+    if (sort === 'balance') list.sort(function(a, b) { return b.balance - a.balance; });
+    else if (sort === 'level') list.sort(function(a, b) { return b.level - a.level || b.balance - a.balance; });
+    else if (sort === 'rating') list.sort(function(a, b) { return b.avg_rating - a.avg_rating || b.rating_count - a.rating_count; });
+    list.forEach(function(item, i) { item.rank = i + 1; });
+    return list;
+}
+
+// ---------- API вызовы ----------
+function fetchLeaderboard(sort) {
+    return fetch(API_BASE + '/leaderboard?sort=' + sort + '&limit=50')
+        .then(function(r) { return r.json(); })
+        .then(function(data) {
+            if (!data.ok) throw new Error('API error');
+            return data;
+        });
+}
+
+function syncToServer() {
+    // Пробуем отправить данные на сервер (без блокировки UI)
+    var payload = {
+        telegram_id: userData.telegram_id,
+        balance: userData.balance,
+        stars: userData.stars,
+        level: userData.level,
+        click_power: userData.clickPower,
+        passive_income: userData.passiveIncome,
+        progress: userData.progress,
+        total_clicks: userData.totalClicks,
+        total_earned: userData.totalEarned,
+        click_upgrades: {
+            power1: userData.clickUpgrades.power1.count,
+            power2: userData.clickUpgrades.power2.count,
+            power3: userData.clickUpgrades.power3.count
+        },
+        farm_upgrades: {
+            worker: userData.farmUpgrades.worker.count,
+            farmer: userData.farmUpgrades.farmer.count,
+            harvester: userData.farmUpgrades.harvester.count
+        },
+        bonus_upgrades: {
+            luck: userData.bonusUpgrades.luck.count,
+            crit: userData.bonusUpgrades.crit.count
+        },
+        donors: userData.donors
+    };
+
+    fetch(API_BASE + '/sync', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+    }).catch(function() { /* Тихий фоллбек — без сервера работаем оффлайн */ });
+}
+
+function submitRating(toUser, score, comment) {
+    return fetch(API_BASE + '/rate', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+            from_user: userData.telegram_id,
+            to_user: toUser,
+            score: score,
+            comment: comment
+        })
+    })
+    .then(function(r) { return r.json(); })
+    .then(function(data) {
+        if (data.ok) return data.rating;
+        throw new Error('Rate failed');
+    });
 }
 
 // ---------- Рендер лидерборда ----------
@@ -1609,157 +1780,43 @@ function initRateModal() {
         if (!currentRateTarget) return;
         var comment = document.getElementById('rateComment').value.trim();
 
-        // Отправляем на сервер
-        fetch(API_BASE + '/api/rate', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-                from_user: userData.telegram_id,
-                to_user: currentRateTarget,
-                score: selectedStarScore,
-                comment: comment
-            })
-        })
-        .then(function(r) { return r.json(); })
-        .then(function(data) {
-            if (data.ok) {
+        // Пробуем отправить на сервер
+        submitRating(currentRateTarget, selectedStarScore, comment)
+            .then(function(rating) {
                 showNotification('Оценка отправлена!', true);
-                // Обновляем рейтинг в данных
+                // Обновляем рейтинг в моковых данных
                 var player = leaderboardData.find(function(p) { return p.telegram_id === currentRateTarget; });
                 if (player) {
-                    player.avg_rating = data.rating.avg;
-                    player.rating_count = data.rating.count;
+                    player.avg_rating = rating.avg;
+                    player.rating_count = rating.count;
                 }
                 renderLeaderboard();
                 closeRateModal();
-            } else {
-                throw new Error('Rate failed');
-            }
-        })
-        .catch(function() {
-            showNotification('Ошибка отправки оценки', false);
-        });
-    });
-}
-
-function syncToServer() {
-    // Отправляем данные на сервер
-    var payload = {
-        telegram_id: userData.telegram_id,
-        balance: userData.balance,
-        stars: userData.stars,
-        level: userData.level,
-        click_power: userData.clickPower,
-        passive_income: userData.passiveIncome,
-        progress: userData.progress,
-        total_clicks: userData.totalClicks,
-        total_earned: userData.totalEarned,
-        click_upgrades: {
-            power1: userData.clickUpgrades.power1.count,
-            power2: userData.clickUpgrades.power2.count,
-            power3: userData.clickUpgrades.power3.count
-        },
-        farm_upgrades: {
-            worker: userData.farmUpgrades.worker.count,
-            farmer: userData.farmUpgrades.farmer.count,
-            harvester: userData.farmUpgrades.harvester.count
-        },
-        bonus_upgrades: {
-            luck: userData.bonusUpgrades.luck.count,
-            crit: userData.bonusUpgrades.crit.count
-        },
-        donors: userData.donors
-    };
-
-    fetch(API_BASE + '/api/sync', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload)
-    }).catch(function() {
-        // Тихий фоллбек
-    });
-}
-
-// ================= ИНИЦИАЛИЗАЦИЯ =================
-document.addEventListener('DOMContentLoaded', function() {
-    // Инициализация Telegram
-    const tg = window.Telegram?.WebApp;
-    
-    if (tg) {
-        tg.ready();
-        tg.expand();
-        
-        const telegramUser = tg.initDataUnsafe?.user;
-        if (telegramUser) {
-            userData.telegram_id = telegramUser.id;
-            userData.username = telegramUser.first_name + 
-                               (telegramUser.last_name ? ' ' + telegramUser.last_name : '');
-            
-            // Регистрируемся на сервере
-            fetch(API_BASE + '/api/register', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                    telegram_id: userData.telegram_id,
-                    username: userData.username
-                })
             })
-            .then(r => r.json())
-            .then(data => {
-                if (data.ok && !data.is_new && data.user) {
-                    // Загружаем существующие данные
-                    userData.balance = data.user.balance;
-                    userData.stars = data.user.stars;
-                    userData.level = data.user.level;
-                    userData.clickPower = data.user.click_power;
-                    userData.passiveIncome = data.user.passive_income;
-                    userData.progress = data.user.progress;
-                    userData.totalClicks = data.user.total_clicks;
-                    userData.totalEarned = data.user.total_earned;
-                    
-                    // Загружаем улучшения
-                    if (data.user.click_upgrades) {
-                        userData.clickUpgrades.power1.count = data.user.click_upgrades.power1 || 0;
-                        userData.clickUpgrades.power2.count = data.user.click_upgrades.power2 || 0;
-                        userData.clickUpgrades.power3.count = data.user.click_upgrades.power3 || 0;
-                    }
-                    if (data.user.farm_upgrades) {
-                        userData.farmUpgrades.worker.count = data.user.farm_upgrades.worker || 0;
-                        userData.farmUpgrades.farmer.count = data.user.farm_upgrades.farmer || 0;
-                        userData.farmUpgrades.harvester.count = data.user.farm_upgrades.harvester || 0;
-                    }
-                    if (data.user.bonus_upgrades) {
-                        userData.bonusUpgrades.luck.count = data.user.bonus_upgrades.luck || 0;
-                        userData.bonusUpgrades.crit.count = data.user.bonus_upgrades.crit || 0;
-                    }
-                    if (data.user.donors) {
-                        userData.donors = data.user.donors;
-                    }
-                    
-                    // Загружаем рейтинг
-                    userData.myRating.avg = data.user.rating?.avg || 0;
-                    userData.myRating.count = data.user.rating?.count || 0;
+            .catch(function() {
+                // Оффлайн — обновляем локально
+                var player = leaderboardData.find(function(p) { return p.telegram_id === currentRateTarget; });
+                if (player) {
+                    var total = player.avg_rating * player.rating_count + selectedStarScore;
+                    player.rating_count++;
+                    player.avg_rating = Math.round((total / player.rating_count) * 10) / 10;
                 }
-                updateUI();
-            })
-            .catch(() => {
-                console.log('Сервер недоступен, играем оффлайн');
-                updateUI();
+                showNotification('Оценка сохранена (демо)', true);
+                renderLeaderboard();
+                closeRateModal();
             });
-        } else {
-            // Тестовый режим без Telegram
-            userData.telegram_id = Math.floor(Math.random() * 900000) + 100000;
-            userData.username = 'Тест_' + (userData.telegram_id % 10000);
-            updateUI();
-        }
-    } else {
-        // Режим разработки (не в Telegram)
-        userData.telegram_id = Math.floor(Math.random() * 900000) + 100000;
-        userData.username = 'Дев_' + (userData.telegram_id % 10000);
-        updateUI();
-    }
+    });
+}
 
-    // Инициализация компонентов
+// =================================================================
+//  ИНИЦИАЛИЗАЦИЯ
+// =================================================================
+document.addEventListener('DOMContentLoaded', function() {
+    // Сгенерировать ID для демо
+    userData.telegram_id = Math.floor(Math.random() * 900000) + 100000;
+    userData.username = 'Игрок_' + (userData.telegram_id % 10000);
+
+    updateUI();
     initNavigation();
     initCategorySwitching();
     initUpgradeHandlers();
@@ -1779,7 +1836,37 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Автосинк каждые 10 секунд
     setInterval(syncToServer, 10000);
+
+    // Попробовать зарегистрироваться на сервере
+    fetch(API_BASE + '/register', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+            telegram_id: userData.telegram_id,
+            username: userData.username
+        })
+    })
+    .then(function(r) { return r.json(); })
+    .then(function(data) {
+        if (data.ok && !data.is_new && data.user) {
+            // Восстанавливаем данные с сервера
+            userData.balance = data.user.balance;
+            userData.stars = data.user.stars;
+            userData.level = data.user.level;
+            userData.clickPower = data.user.click_power;
+            userData.passiveIncome = data.user.passive_income;
+            userData.progress = data.user.progress;
+            userData.totalClicks = data.user.total_clicks;
+            userData.totalEarned = data.user.total_earned;
+            updateUI();
+        }
+    })
+    .catch(function() {
+        console.log('Сервер недоступен — работаем в демо-режиме');
+    });
 });
+
+
 </script>
 </body>
 </html>
