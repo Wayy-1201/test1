@@ -868,7 +868,7 @@ def index():
                     <div class="promo-card">
                         <h2>Промокод на еду:</h2>
                         <div class="promo-content">
-                            <div class="promo-info"><button class="promo-buy-btn" data-price="5000000">Купить за 5M</button></div>
+                            <div class="promo-info"><button class="promo-buy-btn" data-price="500">Купить за 500$</button></div>
                             <div class="promo-image"><img src="/static/imgs/for_model5/xgV6wg8mPlnCva3A 1.svg" alt=""></div>
                         </div>
                     </div>
