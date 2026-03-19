@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <link rel="icon" href="static/imgs/users_api/monetka.svg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Кристалл-Кликер</title>
@@ -510,7 +511,7 @@ footer a.active::before{
     <div class="for_nav">
         <nav id="nav_user">
             <div class="user-info">
-                <div class="user-avatar" id="userAvatar"></div>
+                <div style="width: 45px; height: 45px;" class="user-avatar" id="userAvatar"></div>
                 <div class="user-name" id="userName">Загрузка...</div>
             </div>
             <div class="users_stars_div">
@@ -528,29 +529,29 @@ footer a.active::before{
             <div class="model-content">
                 <div class="stats-row">
                     <div class="stat-block">
-                        <div class="stat-label">За 1 клик</div>
+                        <div style="font-size: 15px;" class="stat-label">За 1 клик</div>
                         <div class="stat-value">
-                            <svg class="coin-svg" viewBox="0 0 36 36"><circle cx="18" cy="18" r="16" fill="#ffd700" stroke="#e6ac00" stroke-width="2"/><text x="18" y="23" text-anchor="middle" font-size="16" font-weight="900" fill="#b8860b">$</text></svg>
-                            <span id="user_upgrade">1</span>
+                            <div style="width: 30px;" class="imgs"><img src="/static/imgs/users_api/monetka.svg" alt=""></div>
+                            <span style="font-size: 17px;" id="user_upgrade">1</span>
                         </div>
                     </div>
                     <div class="stat-block">
-                        <div class="stat-label">Необходимо</div>
+                        <div style="font-size: 15px ;" class="stat-label">Необходимо</div>
                         <div class="stat-value">
-                            <span id="required-for-level">150</span>
+                            <span style="font-size: 25px;" id="required-for-level">150</span>
                         </div>
                     </div>
                     <div class="stat-block">
-                        <div class="stat-label">Монет в сек.</div>
+                        <div style="font-size: 15px;" class="stat-label">Монет в сек.</div>
                         <div class="stat-value">
-                            <svg class="coin-svg" viewBox="0 0 36 36"><circle cx="18" cy="18" r="16" fill="#ffd700" stroke="#e6ac00" stroke-width="2"/><text x="18" y="23" text-anchor="middle" font-size="16" font-weight="900" fill="#b8860b">$</text></svg>
-                            <span id="user_upgrade_sek">0</span>
+                            <div style="width: 30px;" class="imgs"><img src="static/imgs/users_api/monetka.svg" alt=""></div>
+                            <span style="font-size: 17px;" id="user_upgrade_sek">0</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="main-image-container">
-                    <svg class="main-coin" viewBox="0 0 36 36"><circle cx="18" cy="18" r="16" fill="#ffd700" stroke="#e6ac00" stroke-width="2"/><text x="18" y="23" text-anchor="middle" font-size="16" font-weight="900" fill="#b8860b">$</text></svg>
+                    <div style="width: 60px;" class="imgs"><img src="static/imgs/users_api/monetka.svg" alt=""></div>
                     <div id="user_content_coin_lol" class="main-counter">0</div>
                 </div>
 
@@ -569,9 +570,7 @@ footer a.active::before{
 
                 <div class="bottom-section">
                     <div class="tapalka">
-                        <div id="sticker">
-                            <span class="crystal-emoji">💎</span>
-                        </div>
+                        <div id="sticker_container" style="width:180px;height:180px;cursor:pointer;"></div>
                     </div>
                 </div>
             </div>
@@ -581,7 +580,7 @@ footer a.active::before{
         <div id="model_view_2" class="model-view" data-view="2">
             <div class="model-content">
                 <div class="main-image-container">
-                    <svg class="main-coin" viewBox="0 0 36 36"><circle cx="18" cy="18" r="16" fill="#ffd700" stroke="#e6ac00" stroke-width="2"/><text x="18" y="23" text-anchor="middle" font-size="16" font-weight="900" fill="#b8860b">$</text></svg>
+                    <div style="width: 45px;" class="imgs"><img src="static/imgs/users_api/monetka.svg" alt=""></div>
                     <div id="user_content_coin_lol_for_2" class="main-counter2">0</div>
                 </div>
                 <div class="donate-title"><p>Улучшай, Апгрейди, Покупай</p></div>
@@ -688,7 +687,7 @@ footer a.active::before{
         <div id="model_view_3" class="model-view" data-view="3">
             <div class="model-content">
                 <div class="main-image-container">
-                    <svg class="main-coin" viewBox="0 0 36 36"><circle cx="18" cy="18" r="16" fill="#ffd700" stroke="#e6ac00" stroke-width="2"/><text x="18" y="23" text-anchor="middle" font-size="16" font-weight="900" fill="#b8860b">$</text></svg>
+                    <div style="width: 45px;" class="imgs"><img src="static/imgs/users_api/monetka.svg" alt=""></div>
                     <div id="user_content_coin_lol_for_3" class="main-counter2">0</div>
                 </div>
                 <div class="donate-title"><p>Поддержи проект и получи бонусы</p></div>
@@ -777,21 +776,21 @@ footer a.active::before{
                         <h2>Промокод на еду:</h2>
                         <div class="promo-content">
                             <div class="promo-info"><button class="promo-buy-btn" data-price="5000000">Купить за 5M</button></div>
-                            <div class="promo-image">🍕</div>
+                            <div class="promo-image"><img src="static/imgs/for_model5/xgV6wg8mPlnCva3A 1.svg" alt=""></div>
                         </div>
                     </div>
                     <div class="promo-card">
                         <h2>Промокод на одежду:</h2>
                         <div class="promo-content">
                             <div class="promo-info"><button class="promo-buy-btn" data-price="10000000">Купить за 10M</button></div>
-                            <div class="promo-image">👕</div>
+                            <div class="promo-image"><img src="static/imgs/for_model5/F3G7qPk-zTwD-qMI 1.svg" alt=""></div>
                         </div>
                     </div>
                     <div class="promo-card">
                         <h2>Промокод на книги:</h2>
                         <div class="promo-content">
                             <div class="promo-info"><button class="promo-buy-btn" data-price="15000000">Купить за 15M</button></div>
-                            <div class="promo-image">📚</div>
+                            <div class="promo-image"><img src="static/imgs/for_model5/qmkOKVxBws0JRoBV 1.svg" alt=""></div>
                         </div>
                     </div>
                 </div>
@@ -803,23 +802,23 @@ footer a.active::before{
     <div class="for_footer">
         <footer id="footer">
             <a href="#" class="active" data-view="1">
-                <span class="nav-icon">💰</span>
+                <span class="nav-icon"><img src="static/imgs/for_fyter/dollar.png" alt=""></span>
                 <h4>Главная</h4>
             </a>
             <a href="#" data-view="2">
-                <span class="nav-icon">⛏️</span>
+                <span class="nav-icon"><img src="static/imgs/for_fyter/pickaxe.png" alt=""></span>
                 <h4>Улучшения</h4>
             </a>
             <a href="#" data-view="3">
-                <span class="nav-icon">💎</span>
+                <span class="nav-icon"><img src="static/imgs/for_fyter/money.png" alt=""></span>
                 <h4>Донат</h4>
             </a>
             <a href="#" data-view="4">
-                <span class="nav-icon">🏆</span>
+                <span class="nav-icon"><img src="static/imgs/for_fyter/top_lider.png" alt=""></span>
                 <h4>Рейтинг</h4>
             </a>
             <a href="#" data-view="5">
-                <span class="nav-icon">🎁</span>
+                <span class="nav-icon"><img src="static/imgs/for_fyter/Gift.png" alt=""></span>
                 <h4>Промокоды</h4>
             </a>
         </footer>
@@ -844,18 +843,18 @@ footer a.active::before{
         </div>
     </div>
 </div>
+<!-- Добавьте после других скриптов в <head> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
 <script src="https://telegram.org/js/telegram-web-app.js"></script>
-<script>
-// =================================================================
-//  Кристалл-Кликер — Full Game + Rating System + Flask Sync
-// =================================================================
 
-// ================= КОНФИГУРАЦИЯ API =================
+<script>
 const API_BASE = 'http://localhost:5000/api';
-// Для продакшена замените на ваш домен:
-// const API_BASE = 'https://your-server.com/api';
+
 
 // ================= ДАННЫЕ ПОЛЬЗОВАТЕЛЯ =================
+
+
+
 const userData = {
     telegram_id: 0,
     username: 'Игрок',
@@ -888,6 +887,68 @@ const userData = {
     },
     myRating: { avg: 0, count: 0 }
 };
+
+let mySticker = null;
+
+let currentStickerLevel = userData.level; 
+
+document.addEventListener('DOMContentLoaded', () => {
+    const container = document.getElementById("sticker_container");
+    
+    // Функция загрузки стикера
+    function loadSticker(level) {
+        // НЕ загружаем, если уровень не изменился
+        if (level === currentStickerLevel && mySticker) {
+            return; // Выходим, стикер уже загружен
+        }
+        
+        let path = 'static/imgs/for_img_crystal/AnimatedSticker.json';
+        
+        if (level == 1) path = 'static/imgs/for_img_crystal/AnimatedSticker2.json';
+        else if (level == 2) path = 'static/imgs/for_img_crystal/AnimatedSticker.json';
+        else if (level == 3) path = 'static/imgs/for_img_crystal/AnimatedSticker3.json';
+        
+        console.log('Загружаем новый стикер для уровня', level);
+        
+        // Удаляем старый
+        if (mySticker) {
+            mySticker.destroy();
+            mySticker = null;
+        }
+        
+        // Загружаем новый
+        mySticker = lottie.loadAnimation({
+            container: container,
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: path
+        });
+        
+        // Запоминаем текущий уровень стикера
+        currentStickerLevel = level;
+    }
+    
+    // Загружаем начальный стикер
+    loadSticker(userData.level);
+    
+    // Добавляем обработчик клика
+    container.addEventListener('click', handleClick);
+    
+    // Сохраняем оригинальную функцию checkLevel
+    const originalCheckLevel = checkLevel;
+    
+    // Переопределяем checkLevel
+    checkLevel = function() {
+        let oldLevel = userData.level; // Запоминаем уровень ДО
+        originalCheckLevel(); // Вызываем оригинальную функцию
+        // Загружаем новый стикер ТОЛЬКО если уровень действительно изменился
+        if (oldLevel !== userData.level) {
+            loadSticker(userData.level);
+        }
+    };
+});
+sticker_container.addEventListener('click' , handleClick)
 
 // ================= УРОВНИ =================
 const levelConfig = {
@@ -1043,7 +1104,7 @@ function checkLevel() {
         userData.balance += bonus;
         need = levelConfig.get(userData.level);
         showNotification('УРОВЕНЬ ' + userData.level + '! +' + bonus + ' монет', true);
-    }
+    };
 }
 
 function createFloatText(x, y, value) {
@@ -1627,6 +1688,8 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log('Сервер недоступен — работаем в демо-режиме');
     });
 });
+
+
 </script>
 </body>
 </html>
