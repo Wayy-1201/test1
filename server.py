@@ -1560,6 +1560,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
                 updateUI();
                 loadSticker(userData.level);
+                startBubbles();
             })
             .catch(() => {
                 console.log('Сервер недоступен');
